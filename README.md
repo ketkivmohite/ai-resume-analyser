@@ -1,32 +1,65 @@
+
+
 # AI Resume Analyzer
 
-An AI-powered Resume Analyzer built using Django, Python, SQL, and basic NLP techniques.
+An AI-powered Resume Processing System built using Django and Python.
+This project is being developed in structured phases, starting with a solid backend foundation.
+
+
 
 ##  Project Overview
-This web application allows users to:
-- Upload resumes
-- Extract text from resumes
-- Match resumes with job descriptions
-- Calculate skill match percentage
-- Identify missing skills
+
+This web application currently allows users to:
+
+* Upload resume PDFs
+* Automatically extract text from uploaded resumes (using PyMuPDF)
+* Store extracted resume content in the database
+* Manage resumes through the Django admin panel
+
+The goal of this project is to evolve into a full AI-powered resume analysis and job matching platform.
+
+
 
 ##  Tech Stack
-- Python
-- Django
-- SQLite (Development)
-- Git & GitHub
 
-## Project Structure
-- Modular app architecture (users, resumes, jobs, analysis)
-- Clean separation of concerns
-- Industry-style folder structure
+* Python
+* Django
+* SQLite (Development)
+* PyMuPDF (PDF text extraction)
+* Git & GitHub
 
-##  Current Status
-Initial Django project structure completed.
 
-##  Future Features
-- Resume file upload
-- Skill extraction logic
-- Job matching algorithm
-- Dashboard for analytics
-- Deployment
+
+##  Project Architecture
+
+* Modular app structure (`users`, `resumes`, `jobs`, `analysis`)
+* Clean separation of concerns
+* Django ORM for database management
+* Automated resume text extraction on file upload
+* Media file handling configuration
+* Environment variable-based security setup
+
+
+
+##  Current Status (Phase 1 Completed)
+
+✔ Resume upload system
+✔ Media handling configuration
+✔ Automatic PDF text extraction
+✔ Clean backend architecture
+
+This phase establishes the Resume Processing Engine.
+
+
+
+##  Upcoming Features (Next Phases)
+
+* Skill extraction logic
+* Resume keyword analysis
+* Job description comparison
+* Skill match percentage calculation
+* Resume scoring system
+* Dashboard for analytics
+* Deployment
+
+
