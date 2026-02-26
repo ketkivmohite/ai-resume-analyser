@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume List</title>
+</head>
+<body>
+
+<h1>HELLO THIS PAGE IS WORKING</h1>
+
+<h2>All Resumes</h2>
+
+<p>Total resumes: {{ resumes|length }}</p>
+
+{% for resume in resumes %}
+    <div>
+        <h3>
+            <a href="{{resume.id}}">
+            {{ resume.title }}</a>
+        </h3>
+        <p>{{ resume.description }}</p>
+        <p>{{ resume.uploaded_at }}</p>
+    </div>
+    <hr>
+{% empty %}
+    <p>No resumes found.</p>
+{% endfor %}
+
+</body>
+</html>
