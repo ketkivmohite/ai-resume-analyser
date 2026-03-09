@@ -170,7 +170,7 @@ ai-resume-analyser/
 - Resume stored in database with extracted text
 - View all resumes in Django admin panel
 
- [Read Phase 2 Notes](notes/phase-1-notes.md)
+ [Read Phase 2 Notes](notes/phase-2-notes.md)
 
 ---
 
