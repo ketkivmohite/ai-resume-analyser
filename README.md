@@ -149,7 +149,7 @@ ai-resume-analyser/
 - 4 apps created: `resumes`, `jobs`, `users`, `analysis`
 - Basic project configuration
 
-📖 [Read Phase 1 Notes](./docs/PHASE_1_NOTES.md)
+📖 [Read Phase 1 Notes](notes/phase-1-notes.md)
 
 ---
 
@@ -170,7 +170,7 @@ ai-resume-analyser/
 - Resume stored in database with extracted text
 - View all resumes in Django admin panel
 
- [Read Phase 2 Notes](./docs/PHASE_2_NOTES.md)
+ [Read Phase 2 Notes](notes/phase-1-notes.md)
 
 ---
 
