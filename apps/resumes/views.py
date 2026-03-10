@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Resume
 from .forms import ResumeForm
+from apps.analysis.services import analyze_resume
 
 def resume_list(request):
     resumes = Resume.objects.all()
@@ -8,7 +9,18 @@ def resume_list(request):
 
 def resume_detail(request, pk):
     resume = get_object_or_404(Resume, pk=pk)
-    return render(request, 'resumes/resume_detail.html', {'resume': resume})
+    analysis = None
+    job_description = ""
+    
+    if request.method == 'POST':
+        job_description = request.POST.get('job_description', '')
+        analysis = analyze_resume(resume.extracted_text, job_description)
+    
+    return render(request, 'resumes/resume_detail.html', {
+        'resume': resume,
+        'analysis': analysis,
+        'job_description': job_description
+    })
 
 def resume_upload(request):
     if request.method == 'POST':
